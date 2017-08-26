@@ -2,9 +2,6 @@
 
 Sweet Spots is a web application that allows users to map, filter and review points of interest on campus.
 
-Try our app today!
-https://sweet-spots.herokuapp.com/
-
 ### Installation
 
 1. First, run `npm install` in the root of the project
