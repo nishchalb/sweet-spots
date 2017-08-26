@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!-- Author: Bob Liang-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sweet Spots Registration</title>
+    <!-- Bootstrap -->
+    <link href="vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/stylesheets/signin.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mogra" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">
+  </head>
+  <body>
+    <div id="content" class="center text-font">
+      <form id="register-form" class="form-signin">
+        <h2 class="form-signin-heading">Welcome to Sweet Spots!</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputUsername" class="sr-only">Username</label>
+        <input type="text" id="inputUsername" name="username" class="form-control" placeholder="Username" required>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type='password' id="inputPassword" name='password' class="form-control" placeholder="Password" required>
+
+        <button class="btn btn-lg btn-primary btn-block post-button" type="submit">Register</button>
+        <br />
+        <a href="/login" id='back-to-login'>Back to Login page</a>
+        <br />
+      </form>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/register.js"></script>
+  </body>
+</html>

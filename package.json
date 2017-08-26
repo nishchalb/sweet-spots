@@ -1,0 +1,71 @@
+{
+  "name": "6170-sweet-spots",
+  "version": "1.0.0",
+  "description": "Final Project for Fall 2016 6.170 (Software Studio)",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev-build": "./node_modules/.bin/webpack -d",
+    "test": "npm run router-test && npm run model-test",
+    "router-test": "cd tests/router_tests && mocha userTests.js spotTests.js tagTests.js reviewTests.js",
+    "model-test": "cd tests/model_tests && mocha modelTests.js",
+    "start": "node ./bin/www",
+    "debug": "node debug ./bin/www",
+    "lint": "./node_modules/.bin/eslint models public/js/login.js public/js/register.js react routes service app.js",
+    "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.mit.edu:6170-fa16/final-proj-No-REST-for-the-Wicked.git"
+  },
+  "author": "marchie@mit.edu",
+  "license": "MIT",
+  "main": "app.js",
+  "dependencies": {
+    "bcryptjs": "^2.3.0",
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "cookie-parser": "^1.4.3",
+    "debug": "^2.3.3",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "lodash": "^4.17.2",
+    "moment": "^2.16.0",
+    "mongoose": "^4.6.8",
+    "morgan": "^1.7.0",
+    "node-mongo-seeds": "^2.3.0",
+    "react": "^15.4.1",
+    "react-autosuggest": "^7.0.1",
+    "react-bootstrap": "^0.30.7",
+    "react-bootstrap-typeahead": "^1.0.0-beta2",
+    "react-dom": "^15.4.1",
+    "react-native": "^0.39.1",
+    "react-router": "^3.0.0",
+    "request": "^2.79.0",
+    "request-promise-native": "^1.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "css-loader": "^0.26.1",
+    "eslint": "^3.10.2",
+    "eslint-plugin-react": "^6.7.1",
+    "file-loader": "^0.9.0",
+    "json-loader": "^0.5.4",
+    "mocha": "^3.1.2",
+    "react-hot-loader": "^3.0.0-beta.5",
+    "supertest": "^2.0.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.3",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.2"
+  }
+}
